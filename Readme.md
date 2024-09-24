@@ -34,6 +34,9 @@ By completing this hands-on activity, students will:
 - You can follow the instruction given in this article to install hadoop natively on mac book
 - [Click here](https://medium.com/@vikramus4/install-and-configure-hadoop-3-3-6-in-mac-os-dd4be4da8846) to install hadoop on macos
 
+#### Installing hodoop on Github Codespaces VM
+- You can follow the instructions in this [Gist](https://gist.github.com/gopal1996/4c15f051bf2f888046fb4595f7148492) to install hadoop on the codespaces instance.
+
 ---
 
 ### 3. **Prepare the Python Code for Mapper and Reducer**
