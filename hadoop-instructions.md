@@ -96,6 +96,11 @@ mapred streaming
     -output /output/task1_total_sales
 ```
 
+Or you can use this method to run the mapreduce streaming job
+```bash
+hadoop jar /opt/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.3.6.jar -D stream.mapper=./mappers/mapper_task1.py -D stream.reducer=./reducers/reducer_task1.py -input /input/sales_data/product_sales.csv -output /output/task1
+```
+
 #### **6.2 Task 2: Average Revenue per Product Category**
 
 Run the job using Hadoop Streaming:
@@ -107,6 +112,11 @@ mapred streaming
     -reducer reducer_task1.py
     -input /input/sales_data/product_sales.csv
     -output /output/task1_total_sales
+```
+
+Or you can use this method to run the mapreduce streaming job
+```bash
+hadoop jar /opt/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.3.6.jar -D stream.mapper=./mappers/mapper_task2.py -D stream.reducer=./reducers/reducer_task2.py -input /input/sales_data/product_sales.csv -output /output/task2
 ```
 
 ---
@@ -175,20 +185,6 @@ Use the following command to copy the output from HDFS to the Hadoop directory:
 
 ```bash
 hadoop fs -get /output /opt/hadoop-3.2.1/share/hadoop/mapreduce/
-```
-
-#### **9.2 Copy Output from the Container to Your Local Machine**
-
-Now, exit the ResourceManager container:
-
-```bash
-exit
-```
-
-Next, copy the output files from the Docker container to your GitHub Codespaces environment:
-
-```bash
-docker cp resourcemanager:/opt/hadoop-3.2.1/share/hadoop/mapreduce/output/ ./output/
 ```
 
 ---
