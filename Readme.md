@@ -1,4 +1,3 @@
-Here’s the project setup and detailed instructions for **Hands-on 3: Python MapReduce Using Hadoop Streaming or mrjob**:
 # Hands-on 3: Python MapReduce with Hadoop Streaming or mrjob
 
 This hands-on activity will focus on using **Python** to implement MapReduce jobs. You will use two frameworks for this task: **Hadoop Streaming** or **mrjob**. You will analyze a simple dataset, similar to previous activities, but implement the Mapper and Reducer in Python.
